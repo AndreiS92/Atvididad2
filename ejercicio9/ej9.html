@@ -4,10 +4,9 @@
     <meta charset="utf-8" />
     <title>Ej 9: Paseo del Gato</title>
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  />
-    <a href="../index.html" class="btn btn-secondary mb-3">Volver al indice</a>
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <style>
       /* Estilo para el gato */
       #miGato {
@@ -27,21 +26,21 @@
     </style>
   </head>
   <body>
+    <a href="../index.html" class="btn btn-secondary mb-3">Volver al índice</a>
+    
     <img
       id="miGato"
-      src="http://www.anniemation.com/clip_art/images/cat-walk.gif"
+      src="catwalk.gif" <!-- Cambiado a "catwalk.gif" -->
       alt="Gato caminando"
     />
     <div id="textoDebajo">El gato moonwalking</div>
 
     <script>
-
       const gato = document.getElementById("miGato");
       const texto = document.getElementById("textoDebajo");
 
       let posicion = 0;
       let direccion = 1; 
-
 
       function paseoGato() {
         posicion += 10 * direccion;
@@ -61,6 +60,9 @@
       }
       setInterval(paseoGato, 50);
     </script>
+  </body>
+</html>
+
 
 
   </body>
