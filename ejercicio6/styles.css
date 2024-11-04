@@ -1,0 +1,11 @@
+.hidden {
+    visibility: hidden; 
+    height: 1px; 
+    overflow: hidden; 
+    transition: height 0.5s ease; 
+  }
+  
+  .card-text {
+    transition: height 0.5s ease; 
+  }
+  

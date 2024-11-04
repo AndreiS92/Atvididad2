@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ejercicio 8 - Votaciones en gráfico</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <div class="container text-center mt-5">
+      <h1>Votaciones</h1>
+      <div class="btn-group mb-4">
+        <button type="button" class="btn btn-outline-primary" onclick="vote(0)">Socialistas</button>
+        <button type="button" class="btn btn-outline-primary" onclick="vote(1)">Liberales</button>
+        <button type="button" class="btn btn-outline-primary" onclick="vote(2)">Animalistas</button>
+        <button type="button" class="btn btn-outline-primary" onclick="vote(3)">Centristas</button>
+        <button type="button" class="btn btn-outline-primary" onclick="vote(4)">Ecologistas</button>
+        <button type="button" class="btn btn-outline-danger" onclick="reset()">Reset</button>
+      </div>
+      <canvas id="votosChart" width="400" height="400"></canvas>
+    </div>
+    <script src="main.js"></script>
+    <a href="../index.html" class="btn btn-secondary mb-3">Volver al indice</a>
+
+  </body>
+</html>

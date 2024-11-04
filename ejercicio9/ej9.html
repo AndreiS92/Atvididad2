@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ej 9: Paseo del Gato</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+    <a href="../index.html" class="btn btn-secondary mb-3">Volver al indice</a>
+    <style>
+      /* Estilo para el gato */
+      #miGato {
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      /* Estilo para el texto que se mueve con el gato */
+      #textoDebajo {
+        position: absolute;
+        top: 70%; 
+        font-size: 1.2em;
+        color: #75103a;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="miGato"
+      src="http://www.anniemation.com/clip_art/images/cat-walk.gif"
+      alt="Gato caminando"
+    />
+    <div id="textoDebajo">El gato moonwalking</div>
+
+    <script>
+
+      const gato = document.getElementById("miGato");
+      const texto = document.getElementById("textoDebajo");
+
+      let posicion = 0;
+      let direccion = 1; 
+
+
+      function paseoGato() {
+        posicion += 10 * direccion;
+        gato.style.left = posicion + "px";
+        texto.style.left = posicion + "px";
+
+        const anchoVentana = window.innerWidth;
+        const anchoGato = gato.width;
+
+        if (posicion + anchoGato >= anchoVentana) {
+          direccion = -1; 
+        }
+
+        if (posicion <= 0) {
+          direccion = 1; 
+        }
+      }
+      setInterval(paseoGato, 50);
+    </script>
+
+
+  </body>
+</html>

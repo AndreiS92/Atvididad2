@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formulario de Registro</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Formulario de Registro</h2>
+      <form id="registroForm" novalidate>
+        <div class="form-row">
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required />
+            <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+          </div>
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellido" required />
+            <div class="invalid-feedback">Por favor, ingrese su apellido.</div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" class="form-control" id="contrasena" required />
+            <div class="invalid-feedback">Por favor, ingrese una contraseña.</div>
+          </div>
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="repetirContrasena">Repetir Contraseña</label>
+            <input type="password" class="form-control" id="repetirContrasena" required />
+            <div class="invalid-feedback">Por favor, repita su contraseña.</div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="usuario">Nombre de Usuario</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+              </div>
+              <input type="text" class="form-control" id="usuario" required />
+              <div class="invalid-feedback">Por favor, ingrese su nombre de usuario.</div>
+            </div>
+          </div>
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="pais">País</label>
+            <select class="form-control" id="pais" required>
+              <option value="">Seleccione...</option>
+              <option value="es">España</option>
+              <option value="us">Estados Unidos</option>
+              <option value="fr">Francia</option>
+              <option value="de">Alemania</option>
+            </select>
+            <div class="invalid-feedback">Por favor, seleccione su país.</div>
+          </div>
+        </div>
+
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="terminos" required />
+          <label class="form-check-label" for="terminos">Aceptar términos y condiciones</label>
+          <div class="invalid-feedback">Debe aceptar los términos y condiciones.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Enviar formulario</button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+    <a href="../index.html" class="btn btn-secondary mb-3">Volver al indice</a>
+
+  </body>
+</html>

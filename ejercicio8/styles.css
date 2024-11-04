@@ -1,0 +1,14 @@
+.container {
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .btn-group button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Ejercicio 3 - El primer script</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        var confirmacion = confirm("Hola Mundo!");
+        var mensaje = document.createElement("p"); 
+        
+        if (confirmacion) {
+          mensaje.textContent = "Has clicado Aceptar"; 
+          console.log("Has clicado OK");
+        } else {
+          mensaje.textContent = "Has clicado Cancelar"; 
+          console.log("Has clicado Cancelar");
+        }
+
+        document.body.appendChild(mensaje); // agrego l mensaje al body para que se mantenga
+      });
+    </script>
+  </head>
+
+  <body>
+    <a href="../index.html" class="btn btn-secondary mb-3">Volver al indice</a>
+  </body>
+</html>
